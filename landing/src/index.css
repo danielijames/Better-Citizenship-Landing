@@ -1,0 +1,89 @@
+/* Better Citizenship — Design System */
+:root {
+  /* Colors from tech plan */
+  --background: #F7F9FC;
+  --surface: #FFFFFF;
+  --textPrimary: #0A0F1F;
+  --textSecondary: #26324D;
+  --textMuted: #506080;
+  --accent: #2E7D32;
+  --accentSubtle: #EAF6EE;
+  --accentMuted: #DCEFE2;
+  --borderSubtle: #E4EAF5;
+  --shareCardBg: #5E35B1;
+  --shareCardBorder: #7E57C2;
+
+  /* Typography */
+  --font-title: 700;
+  --font-body: 400;
+  --font-caption: 400;
+  --size-title: clamp(1.75rem, 4vw, 2.125rem);
+  --size-body: 17px;
+  --size-caption: 14px;
+  --line-title: 1.2;
+  --line-body: 24px;
+  --line-caption: 20px;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: var(--size-body);
+  line-height: var(--line-body);
+  color: var(--textPrimary);
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: var(--font-title);
+  line-height: var(--line-title);
+  color: var(--textPrimary);
+}
+
+p {
+  margin: 0 0 var(--space-sm);
+  color: var(--textSecondary);
+}
+p:last-child {
+  margin-bottom: 0;
+}
