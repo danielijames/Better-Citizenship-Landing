@@ -40,9 +40,7 @@ function App() {
           <p className="cta-note">Available now on iOS and Android</p>
         </div>
         <div className="hero-visual">
-          <div className="mascot-placeholder" aria-hidden="true">
-            <img src="/AIAntSubject.png" alt="Clever Antony" className="mascot-img" onError={(e) => { e.target.style.display = 'none' }} />
-          </div>
+          <img src="/AIAntSubject.png" alt="Clever Antony" className="hero-mascot" />
         </div>
       </header>
 

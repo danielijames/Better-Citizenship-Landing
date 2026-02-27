@@ -134,35 +134,9 @@
   margin-top: var(--space-md);
 }
 
-.mascot-placeholder {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-xs);
-  padding: var(--space-lg);
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
-}
-
-.mascot-img {
-  width: 120px;
+.hero-mascot {
+  width: 140px;
   height: auto;
-  position: absolute;
-  top: var(--space-lg);
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.mascot-emoji {
-  font-size: 4rem;
-}
-
-.mascot-label {
-  font-size: var(--size-caption);
-  color: var(--textSecondary);
 }
 
 /* Highlights — scannable list (inspired by travel blog) */
