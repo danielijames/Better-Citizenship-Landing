@@ -144,7 +144,7 @@ function App() {
           <div className="footer-links">
             <a href="#">Terms</a>
             <span className="footer-sep">·</span>
-            <a href="#">Privacy</a>
+            <a href="/privacy.html">Privacy</a>
           </div>
           <p className="footer-copy">© Better Citizenship</p>
         </div>
