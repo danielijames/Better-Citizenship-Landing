@@ -45,9 +45,9 @@ Add a `netlify.toml` in the project root:
   publish = "dist"
 ```
 
-## Hero Video
+## Hero App Preview
 
-The hero uses a free stock video from [Mixkit](https://mixkit.co/free-stock-video/people-walking-in-airport-tunnel-6752/) (people walking in airport tunnel). For fully commercial use, consider downloading a video from [Pexels](https://www.pexels.com/search/videos/travel/) (CC0 license) and placing it in `public/` as `hero-video.mp4`, then updating the `<source>` in `App.jsx`.
+The hero displays an animated carousel of app store screenshots (Citizenship-2.png through Citizenship-10.png) from `public/`. Add or replace images in `public/` and update the array in `App.jsx` if needed.
 
 ## App Store Links
 

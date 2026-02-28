@@ -4,22 +4,6 @@ function App() {
   return (
     <div className="landing">
       <header className="hero">
-        <div className="hero-video-wrap">
-          <video
-            className="hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="https://assets.mixkit.co/videos/6752/6752-thumb-720-0.jpg"
-          >
-            <source
-              src="https://assets.mixkit.co/videos/6752/6752-720.mp4"
-              type="video/mp4"
-            />
-          </video>
-          <div className="hero-video-overlay" aria-hidden="true" />
-        </div>
         <div className="hero-content">
           <p className="hero-eyebrow">BETTER CITIZENSHIP</p>
           <h1>Your path to citizenship starts here</h1>
@@ -40,7 +24,26 @@ function App() {
           <p className="cta-note">Available now on iOS and Android</p>
         </div>
         <div className="hero-visual">
-          <img src="/AIAntSubject.png" alt="Clever Antony" className="hero-mascot" />
+          <div className="app-preview">
+            <div className="app-preview-track">
+              {[
+                'Citizenship-2.png',
+                'Citizenship-3.png',
+                'Citizenship-4.png',
+                'Citizenship-5.png',
+                'Citizenship-6.png',
+                'Citizenship-7.png',
+                'Citizenship-9.png',
+                'Citizenship-10.png',
+              ]
+                .flatMap((src) => [src, src])
+                .map((src, i) => (
+                  <div key={`${src}-${i}`} className="app-preview-slide">
+                    <img src={`/${src}`} alt="App preview" />
+                  </div>
+                ))}
+            </div>
+          </div>
         </div>
       </header>
 
