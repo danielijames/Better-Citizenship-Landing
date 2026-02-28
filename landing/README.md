@@ -112,8 +112,8 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 
 If you have questions about this Privacy Policy or your data, please contact us:
 
-- **Support URL:** [Your support page URL, e.g. https://bettercitizenship.app/support]
-- **Email:** [Your support email, e.g. support@bettercitizenship.app]
+- **Support URL:** https://www.bettercitizenshipapp.com/support
+- **Email:** support@bettercitizenshipapp.com
 
 ---
 

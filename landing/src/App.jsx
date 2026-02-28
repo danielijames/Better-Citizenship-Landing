@@ -4,8 +4,10 @@ function App() {
   return (
     <div className="landing">
       <header className="hero">
-        <div className="hero-content">
-          <p className="hero-eyebrow">BETTER CITIZENSHIP</p>
+        <div className="hero-main">
+          <img src="/AIAntSubject.png" alt="Clever Antony" className="hero-mascot" />
+          <div className="hero-content">
+            <p className="hero-eyebrow">BETTER CITIZENSHIP</p>
           <h1>Your path to citizenship starts here</h1>
           <p className="hero-subhead">
             The education needed to blur borders starts here.
@@ -14,14 +16,15 @@ function App() {
             A mobile study app that helps you prepare for citizenship tests in the US, Canada, UK, Australia, France, and Spain—in your preferred language with multiple study modes and an AI-powered search assistant.
           </p>
           <div className="cta-buttons">
-            <a href="#" className="btn btn-primary" aria-label="Download on the App Store">
-              <span className="btn-icon">🍎</span> Download on iOS
+            <a href="#" className="btn btn-app-store" aria-label="Download on the App Store">
+              Download on the App Store
             </a>
-            <a href="#" className="btn btn-primary" aria-label="Get it on Google Play">
-              <span className="btn-icon">▶</span> Download on Android
+            <a href="#" className="btn btn-play-store" aria-label="Get it on Google Play">
+              Get it on Google Play
             </a>
           </div>
           <p className="cta-note">Available now on iOS and Android</p>
+          </div>
         </div>
         <div className="hero-visual">
           <div className="app-preview">
@@ -35,13 +38,11 @@ function App() {
                 'Citizenship-7.png',
                 'Citizenship-9.png',
                 'Citizenship-10.png',
-              ]
-                .flatMap((src) => [src, src])
-                .map((src, i) => (
-                  <div key={`${src}-${i}`} className="app-preview-slide">
-                    <img src={`/${src}`} alt="App preview" />
-                  </div>
-                ))}
+              ].map((src) => (
+                <div key={src} className="app-preview-slide">
+                  <img src={`/${src}`} alt="App preview" />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -129,6 +130,52 @@ function App() {
         </div>
       </section>
 
+      <section className="blog">
+        <div className="container">
+          <h2 className="section-label">BLOG</h2>
+          <h3 className="blog-title">Tips and insights for your citizenship journey</h3>
+          <div className="blog-grid">
+            <article className="blog-card">
+              <a href="/blog/what-better-citizenship-does.html">
+                <h4>What Better Citizenship Does</h4>
+                <p className="blog-excerpt">A guide to the app—6 countries, 5 languages, 3 study modes, Clever Antony, and more.</p>
+                <span className="blog-date">Read more</span>
+              </a>
+            </article>
+            <article className="blog-card">
+              <a href="#">
+                <h4>Understanding the naturalization process</h4>
+                <p className="blog-excerpt">A brief overview of what to expect when applying for citizenship.</p>
+                <span className="blog-date">Coming soon</span>
+              </a>
+            </article>
+            <article className="blog-card">
+              <a href="#">
+                <h4>Study in your language</h4>
+                <p className="blog-excerpt">How Better Citizenship supports learners in 5 languages.</p>
+                <span className="blog-date">Coming soon</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="feedback">
+        <div className="container">
+          <h2 className="section-label">WE WANT YOUR FEEDBACK</h2>
+          <h3 className="feedback-title">Your input helps us improve</h3>
+          <p className="feedback-intro">
+            We really want to hear from you. Whether you have a suggestion, spotted a bug, or want to share your experience—your feedback helps make Better Citizenship better for everyone.
+          </p>
+          <a href="https://www.bettercitizenshipapp.com/support" className="btn btn-feedback">
+            Share your feedback
+          </a>
+          <p className="feedback-email">
+            Or email us at <a href="mailto:support@bettercitizenshipapp.com">support@bettercitizenshipapp.com</a>
+          </p>
+        </div>
+      </section>
+
       <footer className="footer">
         <div className="container">
           <div className="footer-cta">
@@ -145,10 +192,15 @@ function App() {
             </p>
           </div>
           <div className="footer-links">
-            <a href="#">Terms</a>
+            <a href="https://www.bettercitizenshipapp.com/terms">Terms</a>
             <span className="footer-sep">·</span>
-            <a href="/privacy.html">Privacy</a>
+            <a href="https://www.bettercitizenshipapp.com/privacy">Privacy</a>
+            <span className="footer-sep">·</span>
+            <a href="https://www.bettercitizenshipapp.com/support">Support</a>
           </div>
+          <p className="footer-email">
+            <a href="mailto:support@bettercitizenshipapp.com">support@bettercitizenshipapp.com</a>
+          </p>
           <p className="footer-copy">© Better Citizenship</p>
         </div>
       </footer>
